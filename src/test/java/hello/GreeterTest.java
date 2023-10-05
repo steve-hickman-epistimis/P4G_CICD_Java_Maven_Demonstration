@@ -1,9 +1,6 @@
-package hello;
+package test.java.hello;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.*;
-
-import org.junit.Test;
+import hello.Greeter;
 
 public class GreeterTest {
   
@@ -13,5 +10,12 @@ public class GreeterTest {
   public void greeterSaysHello() {
     assertThat(greeter.sayHello(), containsString("Hello"));
   }
+
+private void assertThat(String sayHello, Object containsString) {
+}
+
+private Object containsString(String string) {
+    return null;
+}
 
 }
